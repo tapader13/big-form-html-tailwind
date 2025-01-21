@@ -764,5 +764,197 @@
         </label>
       </div>
     </fieldset>
+    <div class="p-6 bg-white rounded-md border border-gray-300">
+      <!-- 1. Project Status -->
+      <fieldset class="border border-gray-300 p-4 mt-6 rounded-lg">
+        <legend class="text-lg font-semibold text-gray-800 px-2">
+          1. Project status
+        </legend>
+        <div class="mt-3 w-1/2 flex gap-4 justify-between items-center">
+          <label class="text-gray-700">Project status</label>
+          <select class="border border-gray-300 p-2 rounded w-[60%]">
+            <option>Select One</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- 2. Annual Production Capacity -->
+      <fieldset class="border border-gray-300 p-4 rounded-lg mt-6">
+        <legend class="text-lg font-semibold text-gray-800 px-2">
+          2. Annual production capacity
+        </legend>
+        <div class="overflow-x-auto mt-3">
+          <table class="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr class="bg-[#D9EDF7]">
+                <th class="border border-gray-300 p-2">
+                  Name of Product <span class="text-red-500">*</span>
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Unit of Quantity <span class="text-red-500">*</span>
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Quantity <span class="text-red-500">*</span>
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Price (USD) <span class="text-red-500">*</span>
+                </th>
+                <th class="border border-gray-300 p-2">
+                  Sales Value in BDT (in million)
+                  <span class="text-red-500">*</span>
+                </th>
+                <th class="border border-gray-300 p-2">#</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <select class="border p-2 w-full rounded">
+                    <option>Select one</option>
+                  </select>
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2 text-center">
+                  <button class="bg-[#35B0D7] text-white px-3 py-1 rounded">
+                    +
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-gray-600 mt-2">
+          Exchange Rate Ref:
+          <a href="#" class="text-[#35B0D7] underline">Bangladesh Bank</a>.
+          Please Enter Today's Exchange Rate.
+        </p>
+      </fieldset>
+
+      <!-- 3. Date of Commercial Operation -->
+      <fieldset class="border border-gray-300 p-4 rounded-lg mt-6">
+        <legend class="text-lg font-semibold text-primary px-2">
+          3. Date of commercial operation
+        </legend>
+        <div class="mt-3 w-[75%] flex gap-4 items-center">
+          <label class="text-gray-700">Date of commercial operation</label>
+          <input
+            type="date"
+            class="border border-gray-300 p-2 rounded w-[55%]"
+          />
+        </div>
+      </fieldset>
+
+      <!-- 4. Sales in Percentage -->
+      <fieldset class="border border-gray-300 p-4 rounded-lg mt-6">
+        <legend class="text-lg font-semibold text-gray-800 px-2">
+          4. Sales (in 100%) <span class="text-red-500">*</span>
+        </legend>
+        <div class="grid grid-cols-4 gap-10 mt-3">
+          <div class="flex justify-between items-center gap-10">
+            <label class="text-primary">Local</label>
+            <input type="text" class="border p-2 w-full rounded" />
+          </div>
+          <div class="flex justify-between items-center gap-10">
+            <label class="text-primary">Foreign</label>
+            <input type="text" class="border p-2 w-full rounded" />
+          </div>
+          <div class="flex justify-between items-center gap-10">
+            <label class="text-primary">Total in %</label>
+            <input type="text" class="border p-2 flex-1 rounded" />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 5. Manpower of the Organization -->
+      <fieldset class="border border-gray-300 p-4 rounded-lg mt-6">
+        <legend class="text-lg font-semibold text-gray-800 px-2">
+          5. Manpower of the organization
+        </legend>
+        <div class="overflow-x-auto mt-3">
+          <table class="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr class="bg-[#D9EDF7] text-[#35B0D7]">
+                <th class="border border-gray-300 p-2" colspan="3">
+                  Local (Bangladesh only)
+                </th>
+                <th class="border border-gray-300 p-2" colspan="3">
+                  Foreign (Abroad country)
+                </th>
+                <th class="border border-gray-300 p-2">Grand total</th>
+                <th class="border border-gray-300 p-2" colspan="2">Ratio</th>
+              </tr>
+              <tr class="bg-[#D9EDF7] text-[#35B0D7]">
+                <th class="border border-gray-300 p-2">Executive</th>
+                <th class="border border-gray-300 p-2">Supporting Staff</th>
+                <th class="border border-gray-300 p-2">Total (a)</th>
+                <th class="border border-gray-300 p-2">Executive</th>
+                <th class="border border-gray-300 p-2">Supporting Staff</th>
+                <th class="border border-gray-300 p-2">Total (b)</th>
+                <th class="border border-gray-300 p-2">(a+b)</th>
+                <th class="border border-gray-300 p-2">Local</th>
+                <th class="border border-gray-300 p-2">Foreign</th>
+              </tr>
+            </thead>
+            <tbody class="bg-secondary">
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input
+                    type="text"
+                    class="border border-gray-600 bg-secondary p-2 w-full rounded"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input type="text" class="border p-2 w-full rounded" />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input
+                    type="text"
+                    class="border border-gray-600 bg-secondary p-2 w-full rounded"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input
+                    type="text"
+                    class="border border-gray-600 bg-secondary p-2 w-full rounded"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input
+                    type="text"
+                    class="border border-gray-600 bg-secondary p-2 w-full rounded"
+                  />
+                </td>
+                <td class="border border-gray-300 p-2">
+                  <input
+                    type="text"
+                    class="border border-gray-600 bg-secondary p-2 w-full rounded"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </fieldset>
+    </div>
   </body>
 </html>
