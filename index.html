@@ -764,7 +764,7 @@
         </label>
       </div>
     </fieldset>
-    <div class="p-6 bg-white rounded-md border border-gray-300">
+    < class="p-6 bg-white rounded-md border border-gray-300">
       <!-- 1. Project Status -->
       <fieldset class="border border-gray-300 p-4 mt-6 rounded-lg">
         <legend class="text-lg font-semibold text-gray-800 px-2">
@@ -1408,6 +1408,104 @@
           </div>
         </div>
       </fieldset>
+      
+       <fieldset class="border border-gray-300 p-4 rounded-lg mt-6">
+  <legend class="text-lg font-semibold text-gray-800 px-2">
+    8. Public utility service <span class="text-red-500">*</span>
+  </legend>
+  <div class="border rounded-lg overflow-hidden">
+    <div class="p-4">
+      <div class="flex flex-wrap gap-6">
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Land</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Electricity</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Gas</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Telephone</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Road</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Water</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Drainage</span>
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+          <span class="text-gray-700">Others</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+
+        
+        <div className="border rounded-lg overflow-hidden">
+          <div className="p-4 border-b">
+            <h2 className="text-lg font-medium text-gray-700">
+              9. Trade licence details
+            </h2>
+          </div>
+          <div className="p-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label className="block text-gray-700">
+                  Trade Licence Number
+                  <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="block text-gray-700">
+                  Issuing Authority
+                  <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <div className="border rounded-lg overflow-hidden">
+          <div className="p-4 border-b">
+            <h2 className="text-lg font-medium text-gray-700">10. Tin</h2>
+          </div>
+          <div className="p-4">
+            <div className="space-y-2">
+              <label className="block text-gray-700">
+                Tin Number
+                <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+              />
+            </div>
+          </div>
+        </div>
+      
     </div>
   </body>
 </html>
