@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="p-6 bg-gray-100 border border-gray-300 rounded-md">
+      <h2 class="text-lg p-2 text-[#4F7391] font-semibold bg-[#D9EDF7] mb-4">
+        Company Information
+      </h2>
+      <form class="space-y-4">
+        <!-- Name of Organization (English) -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="org-name-en"
+            >Name of Organization/ Company/ Industrial Project (English)</label
+          >
+          <input
+            id="org-name-en"
+            type="text"
+            class="w-full p-2 border border-gray-300 rounded-md"
+            placeholder="Uat Private Ltd."
+          />
+        </div>
+
+        <!-- Name of Organization (Bangla) -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="org-name-bn"
+            >Name of Organization/ Company/ Industrial Project (Bangla)</label
+          >
+          <input
+            id="org-name-bn"
+            type="text"
+            class="w-full p-2 border border-gray-300 rounded-md"
+            placeholder="Uat Private Ltd."
+          />
+        </div>
+
+        <!-- Type of Organization -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="org-type"
+            >Type of the organization</label
+          >
+          <select
+            id="org-type"
+            class="w-full p-2 border border-gray-300 rounded-md"
+          >
+            <option>Private Limited Company</option>
+            <option>Public Limited Company</option>
+            <option>NGO</option>
+          </select>
+        </div>
+
+        <!-- Ownership Status -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="ownership-status"
+            >Ownership status</label
+          >
+          <select
+            id="ownership-status"
+            class="w-full p-2 border border-gray-300 rounded-md"
+          >
+            <option>Partnership</option>
+            <option>Sole Proprietorship</option>
+            <option>Corporation</option>
+          </select>
+        </div>
+
+        <!-- Status of the Organization -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="org-status"
+            >Status of the organization</label
+          >
+          <select
+            id="org-status"
+            class="w-full p-2 border border-gray-300 rounded-md"
+          >
+            <option>Joint Venture</option>
+            <option>Standalone</option>
+          </select>
+        </div>
+
+        <!-- Country of Origin -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="country-origin"
+            >Country of Origin</label
+          >
+          <select
+            id="country-origin"
+            class="w-full p-2 border border-gray-300 rounded-md"
+          >
+            <option>Select One</option>
+            <option>Bangladesh</option>
+            <option>India</option>
+            <option>USA</option>
+          </select>
+        </div>
+
+        <!-- Name of the Project -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="project-name"
+            >Name of the project <span class="text-red-500">*</span></label
+          >
+          <input
+            id="project-name"
+            type="text"
+            class="w-full p-2 border border-gray-300 rounded-md"
+            placeholder="Enter project name"
+          />
+        </div>
+
+        <!-- Business Sector -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="business-sector"
+            >Business Sector (BBS Class Code)
+            <span class="text-red-500">*</span></label
+          >
+          <input
+            id="business-sector"
+            type="text"
+            class="w-full p-2 border border-gray-300 rounded-md"
+            placeholder="Enter BBS Class Code"
+          />
+          <p class="text-sm text-gray-500 mt-1">
+            If you don't know the exact code, please select from the list.
+          </p>
+        </div>
+
+        <!-- Major Activities -->
+        <div>
+          <label
+            class="block text-sm font-medium text-gray-700 mb-1"
+            for="major-activities"
+            >Major activities in brief
+            <span class="text-red-500">*</span></label
+          >
+          <textarea
+            id="major-activities"
+            rows="3"
+            class="w-full p-2 border border-gray-300 rounded-md"
+            placeholder="This is a private limited company."
+          ></textarea>
+          <p class="text-sm text-gray-500 text-right">34/240</p>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
