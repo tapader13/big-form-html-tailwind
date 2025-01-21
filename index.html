@@ -1139,7 +1139,6 @@
                 </select>
               </div>
             </div>
-
             <div
               class="bg-white p-4 grid grid-cols-1 md:grid-cols-[300px,1fr] gap-4 items-center"
             >
@@ -1167,9 +1166,21 @@
                 </div>
               </div>
             </div>
-
             <div
               class="bg-secondary p-4 grid grid-cols-1 md:grid-cols-[300px,1fr] gap-4 items-center"
+            >
+              <div class="text-gray-600">Total Investment (BDT)</div>
+              <div class="flex items-center justify-between gap-4">
+                <input
+                  type="text"
+                  class="flex-1 px-3 border-gray-600 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-secondary"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div
+              class="p-4 grid grid-cols-1 md:grid-cols-[300px,1fr] gap-4 items-center"
             >
               <div class="flex items-center justify-between gap-2">
                 <span class="text-gray-600">
@@ -1208,19 +1219,189 @@
             </div>
 
             <div
-              class="bg-white p-4 grid grid-cols-1 md:grid-cols-[300px,1fr] gap-4 items-center"
+              class="bg-secondary p-4 grid grid-cols-1 md:grid-cols-[300px,1fr] gap-4 items-center"
             >
               <div class="text-gray-600">Total Fee (BDT)</div>
               <div class="flex gap-4">
                 <input
                   type="text"
-                  class="flex-1 px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-secondary"
+                  class="flex-1 border-gray-600 px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-secondary"
                   readonly
                 />
                 <button
                   class="px-4 py-2 bg-[#5bc0de] text-white rounded hover:bg-[#46b8da] focus:outline-none focus:ring-2 focus:ring-[#46b8da] focus:ring-offset-2"
                 >
                   Govt. Fees Calculator
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="border border-gray-300 p-4 rounded-lg mt-6">
+        <legend class="text-lg font-semibold text-gray-800 px-2">
+          7. Source of finance
+        </legend>
+        <div class="border rounded-lg overflow-hidden">
+          <div class="divide-y">
+            <div
+              class="bg-secondary grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">Local Equity (Million)</div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-white grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">Foreign Equity (Million)</div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-secondary grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">Total Equity (Million)</div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-gray-100"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-white grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">Local Loan (Million)</div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-secondary grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">Foreign Loan (Million)</div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-white grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">Total Loan (Million)</div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-gray-100"
+                  readonly
+                />
+              </div>
+            </div>
+            <div
+              class="bg-secondary grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">
+                Total Financing Million (Equity + Loan)
+              </div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-gray-100"
+                  readonly
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-white grid grid-cols-1 md:grid-cols-[300px,1fr] items-center"
+            >
+              <div class="p-4 text-gray-600">
+                Total Financing BDT (Equity + Loan)
+              </div>
+              <div class="p-4">
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 bg-gray-100"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <div class="flex items-center gap-2 mb-4">
+              <svg
+                class="w-4 h-4 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                />
+              </svg>
+              <span class="text-gray-600"
+                >Country wise source of finance (Million BDT)</span
+              >
+            </div>
+
+            <div class="grid grid-cols-12 gap-4">
+              <div class="col-span-5">
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Country <span class="text-red-500">*</span>
+                </label>
+                <select
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                >
+                  <option>Select one</option>
+                </select>
+              </div>
+              <div class="col-span-3">
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Equity Amount <span class="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+              <div class="col-span-3">
+                <label class="block text-sm font-medium text-gray-700 mb-1">
+                  Loan Amount <span class="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+              <div class="col-span-1 flex items-end">
+                <button
+                  class="w-full px-3 py-2 bg-[#35B0D7] text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
+                  +
                 </button>
               </div>
             </div>
