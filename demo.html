@@ -187,10 +187,13 @@
         <div class="bg-white h-[85vh] p-6 border-b">
           <h2 class="text-xl font-semibold mb-6">Checkout</h2>
           <div class="flex flex-col justify-between h-full">
-            <div class="space-y-4 mb-6">
-              <div
-                class="flex items-center h-full justify-between border-b pb-2"
-              >
+            <div class="mb-6">
+              <div class="flex items-center justify-between">
+                <h3 class="font-semibold">Name</h3>
+                <h3 class="font-semibold">QTY</h3>
+                <h3 class="font-semibold">Price</h3>
+              </div>
+              <div class="flex items-center h-full justify-between border-b">
                 <div class="flex items-center gap-4">
                   <span
                     class="w-8 h-8 bg-gray-100 flex items-center justify-center rounded"
@@ -198,13 +201,44 @@
                   >
                   <div>
                     <p class="font-medium">Risus Fringilla</p>
-                    <p class="text-sm text-gray-500">$22.00</p>
                   </div>
                 </div>
                 <div class="flex items-center gap-2">
-                  <button class="px-2 border rounded">-</button>
+                  <button class="px-2 border-2 border-emerald-600 rounded">
+                    -
+                  </button>
                   <span>1</span>
-                  <button class="px-2 border rounded">+</button>
+                  <button
+                    class="px-2 border rounded border-2 border-emerald-600"
+                  >
+                    +
+                  </button>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">$22.00</p>
+                </div>
+              </div>
+              <div class="flex items-center h-full justify-between border-b">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="w-8 h-8 bg-gray-100 flex items-center justify-center rounded"
+                    >🛒</span
+                  >
+                  <div>
+                    <p class="font-medium">Risus Fringilla</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <button class="px-2 border-2 border-emerald-600 rounded">
+                    -
+                  </button>
+                  <span>1</span>
+                  <button class="px-2 border-2 border-emerald-600 rounded">
+                    +
+                  </button>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500">$22.00</p>
                 </div>
               </div>
             </div>
