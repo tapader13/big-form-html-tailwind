@@ -157,14 +157,16 @@
         <footer
           class="fixed bottom-0 left-0 right-[400px] bg-white border-t p-4"
         >
-          <div class="flex justify-around w-full mx-auto">
-            <button class="px-4 py-4 border rounded bg-emerald-600 text-white">
+          <div class="flex justify-between gap-5 w-full mx-auto">
+            <div
+              class="px-4 flex-1 py-4 border-[3px] rounded border-emerald-600 text-emerald-600"
+            >
               Coffee
-            </button>
-            <button class="px-4 py-4 border rounded">Beverages</button>
-            <button class="px-4 py-4 border rounded">BBQ</button>
-            <button class="px-4 py-4 border rounded">Snacks</button>
-            <button class="px-4 py-4 border rounded">Desserts</button>
+            </div>
+            <div class="px-4 flex-1 py-4 border rounded">Beverages</div>
+            <div class="px-4 flex-1 py-4 border rounded">BBQ</div>
+            <div class="px-4 flex-1 py-4 border rounded">Snacks</div>
+            <div class="px-4 flex-1 py-4 border rounded">Desserts</div>
           </div>
           <div class="mt-5 text-right gap-2">
             <button
@@ -185,7 +187,7 @@
         class="fixed right-0 top-14 h-full w-[400px] border-l bg-white flex flex-col"
       >
         <div class="bg-white h-[85vh] p-6 border-b">
-          <h2 class="text-xl font-semibold mb-6">Checkout</h2>
+          <h2 class="text-xl text-center font-semibold mb-6">Checkout</h2>
           <div class="flex flex-col justify-between h-full">
             <div class="mb-6">
               <div class="flex items-center justify-between">
@@ -208,9 +210,7 @@
                     -
                   </button>
                   <span>1</span>
-                  <button
-                    class="px-2 border rounded border-2 border-emerald-600"
-                  >
+                  <button class="px-2 rounded border-2 border-emerald-600">
                     +
                   </button>
                 </div>
